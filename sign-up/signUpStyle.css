@@ -4,25 +4,130 @@ body {
     margin: 0px;
     background-color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.signUpContainer{
+    height: 620px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#imageHolder{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+#monkleyLogo{
+    margin-top: 10px;
+    width: 100px;
+}
+
+#formHolder{
+    margin: 40px;
+    margin-top: 20px;
+}
+
+#firstName, #lastName, #email, #password {
+    margin: 10px 0px;
+    width: 400px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#password{
+    margin-bottom: 16px;
+}
+
+#submit{
+    width: 410px;
+    padding: 7px;
+    background-color: rgb(130, 130, 130);
+    color: rgb(225, 200, 43);
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: rgb(225, 200, 43);
+    color: rgb(130, 130, 130);
+}
+
+#continueOptions{
     display: flex;
     flex-direction: column;
+    margin: 0px 40px;
+    border-top: 2px solid grey;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
 }
 
-#pageHeader {
+.continueText, .goBack{
+    font-size: smaller;
+}
+
+#orImage{
+    position: relative;
+    top: -16px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#googleLogo, #facebookLogo {
+    width: 30px;
+    border-radius: 50%;
+}
+
+#logos{
+    width: 400px;
     display: flex;
-    background-color: grey;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0;
+    margin-top: 13px;
 }
 
-.companyLogoImage {
-    height: 65px;
-    margin-right: 5px;
-    padding-left: 30px;
+.google {
+    margin-left: 40px;
 }
 
-.siteNameText{
-    font-style: italic;
+.facebook{
+    margin-left: 140px;
+}
+
+#logos a {
+    position: relative;
+    top: -9px;
+    padding-left: 6px;
+    text-decoration: none;
+    color: grey;
+}
+
+.goBack{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.goBack a{
+    text-decoration: none;
+    color: blue;
+}
+
+.goBack a:hover{
     text-decoration: underline;
+}
+
+#copyright{
+    position: absolute;
+    top: 93%;
+    left: 83%;
+    transform: translate(-7%, -17%);
 }

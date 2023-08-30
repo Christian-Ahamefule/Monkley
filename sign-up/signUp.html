@@ -8,12 +8,57 @@
     <link rel="stylesheet" href="signUpStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
 </head>
 <body>
-    <nav id="pageHeader">
-        <img src="../images/Ellipse 1.png" alt="site logo" class="companyLogoImage">
-        <h2 class="siteNameText">Monkley</h2>
-    </nav>
-    
+    <div class="signUpContainer">
+        <div id="imageHolder">
+            <img src="../images/Ellipse 1.png" alt="monkley logo" id="monkleyLogo">
+        </div>
+
+        <div id="formHolder">
+            <form action="#" method="post" id="form">
+                <label for="firstName" class="firstName">First Name</label><br>
+                <input type="text" id="firstName" placeholder="Enter first name" autocomplete="on" required><br>
+                
+                <label for="lastName" class="lastName">Last Name</label><br>
+                <input type="text" id="lastName" placeholder="Enter Last name" autocomplete="on" required><br>
+                
+                <label for="email" class="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter eamil address" required><br>
+                
+                <label for="password" class="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Create password" required>
+
+                <input type="button" value="Sign Up" id="submit">
+            </form>
+        </div>
+
+        <div id="continueOptions">
+            <img src="../images/or-removebg-preview.png" id="orImage" style="background-color: whitesmoke;">
+            <span class="continueText">Continue with</span>
+
+            <div id="logos">
+                <div class="google">
+                    <img src="../images/google.png" alt="google logo" id="googleLogo"><a href="https://google.com">Google</a>
+                </div>
+                <div class="facebook">
+                    <img src="../images/facebook.png" alt="facebook" id="facebookLogo"><a href="https://facebook.com">facebook</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="goBack">
+            <span>Got a account? </span><a href="../login/index.html">Sign In</a>
+        </div>
+    </div>
+
+    <div id = "copyright">
+        <span id="copyrightSymbol">&#169</span>
+        <span class="copyrightText">Khris_Demo_2023</span>
+    </div>
+
+    <script src="./signUp.js"></script>
 </body>
 </html>
