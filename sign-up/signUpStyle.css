@@ -10,11 +10,14 @@ body {
     height: 620px;
     width: 500px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+    border-color: grey;
+    padding: 10px 5px;
 }
 
 #imageHolder{
@@ -30,11 +33,11 @@ body {
 
 #formHolder{
     margin: 40px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #firstName, #lastName, #email, #password {
-    margin: 10px 0px;
+    margin: 9px 0px;
     width: 400px;
     background-color: whitesmoke;
     border: none;
@@ -42,13 +45,16 @@ body {
     padding: 5px;
 }
 
-#password{
-    margin-bottom: 16px;
+#icon{
+    position: relative;
+    top: -32px;
+    right: -380px;
+    color: rgb(153, 152, 152);
 }
 
 #submit{
     width: 410px;
-    padding: 7px;
+    padding: 10px;
     background-color: rgb(130, 130, 130);
     color: rgb(225, 200, 43);
     font-weight: bold;
@@ -77,38 +83,49 @@ body {
     font-size: smaller;
 }
 
-#orImage{
+.continueText {
+    background-color: whitesmoke;
     position: relative;
-    top: -16px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-#googleLogo, #facebookLogo {
-    width: 30px;
-    border-radius: 50%;
+    top: -9px;
+    padding: 0px 5px;
+    font-weight: bold;
+    color: rgb(164, 163, 163);
 }
 
 #logos{
     width: 400px;
     display: flex;
-    margin-top: 13px;
+    margin: 18px 0px;
+    justify-content: space-between;
+}
+
+#googleLogo, #facebookLogo {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.google, .facebook {
+    width: 190px;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .google {
-    margin-left: 40px;
+    color: red;
+    border: 2px solid red;
 }
 
 .facebook{
-    margin-left: 140px;
+    color: rgb(81, 81, 246);
+    border: 2px solid rgb(81, 81, 246);
 }
 
-#logos a {
+.buttonName {
+    margin-left: 10px;
     position: relative;
-    top: -9px;
-    padding-left: 6px;
-    text-decoration: none;
-    color: grey;
+    top: -4px;
 }
 
 .goBack{
